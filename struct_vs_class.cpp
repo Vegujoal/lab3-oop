@@ -31,6 +31,9 @@ struct RectangleStruct
                 if (w > 0) {
                     width = w;
                 }
+                else{
+                    cout << "Error less than 0" << endl;
+                }
             }
             void setHeight(double h) {
                 if (h > 0) {
