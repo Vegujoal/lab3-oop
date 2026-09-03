@@ -64,6 +64,11 @@ class Student
         // ===== No los toques todavia - les toca mas adelante =====
 
         // TODO (Parte D): Constructor with parameters (name, id, gpa).
+        Student(string n, int i, double g) {
+            name = n;
+            id = i;
+            gpa = g;
+        }
 
         // TODO (Parte E): Destructor.
         // Imprime un mensaje indicando que el objeto Student con ese 'name' fue destruido.
@@ -77,12 +82,10 @@ int main() {
     Student s1;
     cout << "------------Initial Info-----------\n";
     //s1.printInfo();
-    s1.setName("Abelardo");
-    s1.setID(1234);
-    s1.setGpa(4.1);
+    s1.setName("Juan Abelardo");
+    s1.setID(1222);
+    s1.setGpa(4.0);
     s1.printInfo();
-
-
 
     // TODO (Parte C): Prueba setGpa() con un valor invalido (ej. 5.0)
     // y confirma que el mensaje de error aparece y el gpa no cambia.
@@ -91,6 +94,12 @@ int main() {
 
     // TODO (Parte D): Crea un segundo Student usando el constructor con
     // parametros, con datos dummy (ej. "Alice Smith", 1001, 3.7).
+    Student s2;
+    cout << "\n---------Second Student Info---------\n";
+    s2.setName("Julia Abelarda");
+    s2.setID(1020);
+    s2.setGpa(3.6);
+    s2.printInfo();
 
     return 0;
 }
